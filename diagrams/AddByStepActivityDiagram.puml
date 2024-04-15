@@ -1,0 +1,25 @@
+@startuml
+
+sprite $rake [16x16/8] {
+0000000000000000
+0000000jj0000000
+0000000jj0000000
+0005555jj5555000
+000jjeejjeejj000
+000jj00jj00jj000
+000jj00jj00jj000
+0000000000000000
+}
+skin rose
+skinparam ActivityFontSize 15
+skinparam ArrowFontSize 12
+start
+:User executes "addbystep" command;
+:Get all the necessary inputs from user<$rake>;
+:User types the the "cp" command;
+:Command is copied to the clipboard of the user;
+:User closes the window;
+
+
+stop
+@enduml
